@@ -2,25 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <h3>Edited by Muhammad Sohail</h3>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App({name, age}) {
+  
+  return <div>
+
+    Hello from App.js updated by {name} and age is {age}
+
+  </div>
 }
 
 export default App;
